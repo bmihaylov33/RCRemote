@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+    <!--android:background="@drawable/background"-->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_layout">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/arrow_left"
+            android:id="@+id/left_arrow_bt"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/arrow_right"
+            android:id="@+id/right_arrow_bt"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/arrow_up"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linear_layout"
+        android:id="@+id/up_arrow_bt"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/arrow_down"
+        android:layout_below="@+id/up_arrow_bt"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/down_arrow_bt"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/state_text"
+        android:textColor="@color/purple"
+        android:textSize="42sp"
+        android:text="@string/state"
+        android:id="@+id/state"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"
+        android:text="@string/stay"
+        android:id="@+id/state_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/purple"
+        android:text="@string/distance"
+        android:id="@+id/distance"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/distance"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/teal_200"
+        android:text="208 cm"
+        android:id="@+id/distance_text"
+        android:layout_toRightOf="@+id/distance" />
+
+    <Button
+        android:layout_height="38dp"
+        android:layout_width="38dp"
+        android:background="@drawable/lightbulb_on"
+        android:layout_below="@+id/distance"
+        android:id="@+id/light_bt"/>
+
+    <ImageView
+        android:layout_height="34dp"
+        android:layout_width="34dp"
+        android:background="@drawable/battery_outline"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/battery_level"
+        android:layout_alignParentRight="true" />
+
+<!--    <Button-->
+<!--        android:layout_height="34dp"-->
+<!--        android:layout_width="34dp"-->
+<!--        android:background="@drawable/ic_bluetooth1"-->
+<!--        android:layout_toLeftOf="@+id/battery_level"-->
+<!--        android:id="@+id/bluetooth_bt" />-->
+
+    <Button
+        android:layout_height="34dp"
+        android:layout_width="34dp"
+        android:background="@drawable/bt_accelerometer"
+        android:layout_toStartOf="@+id/battery_level"
+        android:id="@+id/accelerometer_bt"
+        android:layout_toLeftOf="@+id/battery_level" />
+
+    <ImageView
+        android:layout_height="34dp"
+        android:layout_width="34dp"
+        android:textColor="@color/purple"
+        android:background="@drawable/ic_mic_black_off"
+        android:layout_toStartOf="@+id/accelerometer_bt"
+        android:id="@+id/voice_bt"
+        android:layout_toLeftOf="@+id/accelerometer_bt" />
+
+</RelativeLayout>

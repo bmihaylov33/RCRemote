@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tu_sofia.rcremote">
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RCRemote">
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.RCRemote.NoActionBar" />
+        <activity
+            android:name=".DeviceActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name=".AccelerometerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.RCRemote.NoActionBar" />
+        <activity
+            android:name=".ControlActivity"
+            android:label="@string/title_activity_control"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.RCRemote.NoActionBar" />
+        <activity android:name=".IntroActivity" />
+        <service
+            android:name=".BluetoothConnection"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#555e98</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF62004E</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="teal">#46aeed</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Background gradient -->
+    <color name="purple_gradient_start">#10152e</color>
+    <color name="purple_gradient_end">#272b4a</color>
+
+    <!-- Screens background -->
+    <color name="bg_screen1">#b12515</color>
+    <color name="bg_screen2">#FFBB00</color>
+    <color name="bg_screen3">#74a443</color>
+
+    <!-- Dots active colors -->
+    <color name="dot_active">#000000</color>
+
+    <!-- Dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+</resources>

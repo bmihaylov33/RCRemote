@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RCRemote</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_control">Control mode</string>
+    <string name="action_about">About app</string>
+
+    <string name="none_paired">No devices have been paired</string>
+
+    <string name="title_activity_intro">IntroActivity</string>
+
+    <string name="state">STATE</string>
+    <string name="stay">STAY</string>
+    <string name="distance">Distance: </string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">Connect to the car</string>
+    <string name="desc_slide1">Drive car via bluetooth</string>
+    <string name="title_slide2">Accelerometer control</string>
+    <string name="desc_slide2">Easy control on the car</string>
+    <string name="title_slide3">Battery state</string>
+    <string name="desc_slide3">Shows up car battery state</string>
+    <string name="title_activity_control">ControlActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_app">RC Remote Control App\n\n This application is made for personal entertainment.\n\n Whit it you can control your remote control car via\n bluetooth.\n\n Check car\'s battery percentage and check the\n distance between your car and near obstacles.</string>
+</resources>
